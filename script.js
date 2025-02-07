@@ -39,5 +39,40 @@ form.addEventListener('submit', (event) => {
     }
 });
 
-// Додаткові функції (за необхідності)
-// ... (наприклад, динамічне завантаження контенту, анімація, інтерактивні елементи)
+// Створюємо елемент кола завантаження
+const loadingCircle = document.createElement('div');
+loadingCircle.classList.add('loading-circle');
+
+// Додаємо коло завантаження на сторінку
+document.body.appendChild(loadingCircle);
+
+// Стилі для кола завантаження (CSS)
+/*
+.loading-circle {
+    position: fixed; /* Фіксуємо на екрані */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центруємо */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #333; /* Колір кола */
+    border-top-color: #007bff; /* Колір анімованої частини */
+    animation: rotate 1s linear infinite; /* Запускаємо анімацію */
+    z-index: 9999; /* Розміщуємо над іншими елементами */
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+*/
+
+// Ховаємо коло завантаження після завантаження сторінки
+window.addEventListener('load', () => {
+    loadingCircle.style.display = 'none';
+});
