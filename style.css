@@ -70,3 +70,26 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+.loading-circle {
+    position: fixed; /* Фіксуємо на екрані */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центруємо */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #333; /* Колір кола */
+    border-top-color: #007bff; /* Колір анімованої частини */
+    animation: rotate 1s linear infinite; /* Запускаємо анімацію */
+    z-index: 9999; /* Розміщуємо над іншими елементами */
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
