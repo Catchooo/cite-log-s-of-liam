@@ -40,15 +40,3 @@ form.addEventListener('submit', (event) => {
 });
 // ... (інші функції JavaScript)
 
-// Анімація кола завантаження
-// Створюємо елемент кола завантаження
-const loadingCircle = document.createElement('div');
-loadingCircle.classList.add('loading-circle');
-
-// Додаємо коло завантаження на сторінку
-document.body.appendChild(loadingCircle);
-
-// Ховаємо коло завантаження після завантаження сторінки
-window.addEventListener('load', () => {
-    loadingCircle.style.display = 'none';
-});
