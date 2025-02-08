@@ -72,3 +72,16 @@ function changeStyle() {
 
 // Викликаємо функцію changeStyle() після завантаження сторінки
 window.addEventListener("load", changeStyle);
+function changeTextStyle() {
+  // Знаходимо всі текстові елементи на сторінці
+  const textElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li, a, span, div'); // Додайте інші елементи за необхідності
+
+  // Застосовуємо стилі до кожного елемента
+  textElements.forEach(element => {
+    element.style.fontWeight = 'bold'; // Робимо текст жирним
+    element.style.color = 'white'; // Змінюємо колір тексту на білий
+  });
+}
+
+// Викликаємо функцію changeTextStyle() після завантаження сторінки
+window.addEventListener('load', changeTextStyle);
