@@ -42,7 +42,7 @@ form.addEventListener('submit', (event) => {
 // Функція для зміни стилю елементів
 function changeStyle() {
   // Змінюємо колір фону body
-  document.body.style.backgroundColor = "gray";
+  document.body.style.backgroundColor = "purple";
 
   // Змінюємо розмір кнопок
   const buttons = document.querySelectorAll("button");
