@@ -59,7 +59,7 @@ function changeStyle() {
   // Додаємо ефект зменшення фото при наведенні миші
   const heroImage = document.querySelector(".hero-image img");
   heroImage.addEventListener("mouseover", () => {
-    heroImage.style.transform = "scale(0.9)"; // Зменшуємо масштаб
+    heroImage.style.transform = "scale(5)"; // Зменшуємо масштаб
     heroImage.style.transition = "transform 0.3s ease"; // Додаємо плавний перехід
   });
   heroImage.addEventListener("mouseout", () => {
