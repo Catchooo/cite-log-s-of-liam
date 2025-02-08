@@ -85,3 +85,20 @@ function changeTextStyle() {
 
 // Викликаємо функцію changeTextStyle() після завантаження сторінки
 window.addEventListener('load', changeTextStyle);
+function changeInputStyle() {
+  // Знаходимо всі поля для вводу тексту
+  const inputs = document.querySelectorAll('input[type="text"], input[type="email"], textarea');
+
+  // Застосовуємо стилі до кожного поля
+  inputs.forEach(input => {
+    input.style.backgroundColor = 'black'; // Змінюємо колір фону на чорний
+    input.style.color = 'white'; // Змінюємо колір тексту на білий
+    input.style.fontWeight = 'bold'; // Робимо текст жирним
+    input.style.fontSize = '12px'; // Змінюємо розмір шрифту на маленький
+    input.style.padding = '5px'; // Додаємо внутрішній відступ
+    input.style.border = '1px solid white'; // Додаємо білу рамку
+  });
+}
+
+// Викликаємо функцію changeInputStyle() після завантаження сторінки
+window.addEventListener('load', changeInputStyle);
