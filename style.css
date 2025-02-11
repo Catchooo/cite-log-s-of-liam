@@ -5,24 +5,22 @@ body {
 }
 
 header {
-    background-color: #0346ff;
-    color: white;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Розміщуємо елементи по краях */
+    /* ... інші стилі для шапки ... */
+    display: flex; /* Використовуємо flexbox для розміщення елементів */
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+    justify-content: space-between; /* Розміщуємо елементи по краях шапки */
+    padding: 10px; /* Додаємо внутрішній відступ */
 }
-
-
 
 .header-content {
     display: flex;
     align-items: center;
 }
+
 .logo {
-width: 50px; /* Задаємо ширину логотипу */
-height: auto; /* Зберігаємо пропорції логотипу */
-margin-right: 10px; /* Додаємо відступ справа від логотипу */
+    width: 50px; /* Задаємо ширину логотипу */
+    height: auto; /* Зберігаємо пропорції логотипу */
+    margin-right: 10px; /* Додаємо відступ справа від логотипу */
 }
 
 h1 {
