@@ -5,27 +5,9 @@ body {
 }
 
 header {
-    /* ... інші стилі для шапки ... */
-    display: flex; /* Використовуємо flexbox для розміщення елементів */
-    align-items: center; /* Вирівнюємо елементи по вертикалі */
-    justify-content: space-between; /* Розміщуємо елементи по краях шапки */
-    padding: 10px; /* Додаємо внутрішній відступ */
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    width: 50px; /* Задаємо ширину логотипу */
-    height: auto; /* Зберігаємо пропорції логотипу */
-    margin-right: 10px; /* Додаємо відступ справа від логотипу */
-}
-
-h1 {
-    font-size: 24px;
-    margin: 0; /* Видаляємо стандартні відступи для h1 */
+    background-color: #0346ff;
+    color: white;
+    padding: 10px;
 }
 
 nav ul {
@@ -33,13 +15,14 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center; /* Центруємо елементи навігації */
 }
 
 nav li {
     margin: 0 10px;
 }
 
-nav a {    
+nav a {
     color: white;
     text-decoration: none;
 }
@@ -53,14 +36,14 @@ nav a {
 }
 
 .hero-image {
-    width: 100%; /* Або інша ширина за бажанням */
-    margin-bottom: 20px; /* Відступ від зображення до кнопки */
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .hero-image img {
     width: 100%;
     height: auto;
-    display: block; /* Щоб уникнути зайвого простору під зображенням */
+    display: block;
 }
 
 #hero h1 {
@@ -87,4 +70,3 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
