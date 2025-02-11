@@ -8,11 +8,12 @@ header {
     background-color: #0346ff;
     color: white;
     padding: 10px;
-    display: flex; /* Використовуємо flexbox для розміщення елементів */
-    align-items: center; /* Вирівнюємо елементи по вертикалі */
-    justify-content: space-between; /* Розміщуємо елементи по краях шапки */
-    padding: 10px; /* Додаємо внутрішній відступ */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Розміщуємо елементи по краях */
 }
+
+
 
 .header-content {
     display: flex;
@@ -24,19 +25,23 @@ height: auto; /* Зберігаємо пропорції логотипу */
 margin-right: 10px; /* Додаємо відступ справа від логотипу */
 }
 
+h1 {
+    font-size: 24px;
+    margin: 0; /* Видаляємо стандартні відступи для h1 */
+}
+
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
 }
 
 nav li {
     margin: 0 10px;
 }
 
-nav a {
+nav a {    
     color: white;
     text-decoration: none;
 }
